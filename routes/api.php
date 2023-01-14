@@ -20,3 +20,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::post('test', 'App\Http\Controllers\FormulaireController@store');
 Route::get('test/{id}', 'App\Http\Controllers\FormulaireController@get');
+Route::post(
+    'calcul-resultat/{id}',
+    'App\Http\Controllers\FormulaireController@calculResultat'
+);
