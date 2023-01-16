@@ -91,7 +91,8 @@ class FormulaireController extends Controller
                     $request[$i]['champ_type'] == 1 ||
                     $request[$i]['champ_type'] == 5 ||
                     $request[$i]['champ_type'] == 6 ||
-                    $request[$i]['champ_type'] == 7) &&
+                    $request[$i]['champ_type'] == 7 ||
+                    $request[$i]['champ_type'] == 8) &&
                 $request[$i]['value']
             ) {
                 $resultat = $resultat + $request[$i]['champ_poids'];
